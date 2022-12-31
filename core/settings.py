@@ -73,13 +73,38 @@ WSGI_APPLICATION = 'core.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
+""" DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
-}
+} """
 
+""" DATABASES = {
+    "default": {
+        "ENGINE": "mssql",
+        "NAME": "DATABASE_NAME",
+        "USER": "USER_NAME",
+        "PASSWORD": "PASSWORD",
+        "HOST": "HOST_ADDRESS",
+        "PORT": "1433",
+        "OPTIONS": {"driver": "ODBC Driver 17 for SQL Server", 
+        },
+    },
+} """
+
+DATABASES = {
+    "default": {
+        "ENGINE": "mssql",
+        "NAME": "DJANGO",
+        "USER": "SA",
+        "PASSWORD": "764864",
+        "HOST": "127.0.0.1",
+        "PORT": "1433",
+        "OPTIONS": {"driver": "ODBC Driver 17 for SQL Server", 
+        },
+    },
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
@@ -103,9 +128,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'tr-TR'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Istanbul'
 
 USE_I18N = True
 
