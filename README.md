@@ -1,2 +1,3 @@
 # django-mssql
-MsSql Connection on Django
+#### pip install mssql-django 
+#### MsSql Connection on Django
